@@ -1,0 +1,31 @@
+
+#header{
+    padding: 20px;
+    border-top: 5px solid #3db8ea;
+}
+
+#header #header_2{
+    margin-top: 30px;
+}
+
+#header .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 0 auto;
+}
+
+ul {
+    display: none;
+}
+
+ul.active{
+    display:block;
+}
+
+
+
+
+
+
