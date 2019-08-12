@@ -8,7 +8,7 @@
     "url": "https://github.com/planetoftheweb/learnangular.git"
   },
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" "
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ","build": "this is the build script"
   },
   "dependencies": {
     "@angular/common": "2.0.0",
