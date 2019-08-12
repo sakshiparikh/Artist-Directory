@@ -1,0 +1,46 @@
+<div id="header" class="container-fluid">
+    <div class="header-main row">
+        <div class="col-lg-4 col-md-4">
+            <button class='secondary-button'>Subscribe</button>
+        </div>
+        <div class="col-lg-4 col-md-4 text-center">
+            <h2>Artist Network</h2>
+        </div>
+        <div class="col-lg-4 col-md-4 text-right">
+            <a ><button  class='signin link' (click)="navigate()" >Sign In</button></a>
+           
+            <span>/</span>
+            <a href='#'><span class='signup link'>Sign Up</span></a>
+
+        </div>
+    </div>
+
+    <div id="header_2" class="menu-wrap">
+        <div class=" menu-container container">
+            <ul class="menu">
+                <li class="menu-item"  (click)="showMenu($event)" >Get Inspired
+                    <ul [class.active]='isOpen'>
+                        <li>Creativity & Inspiration</li>
+                        <li>Artist Profiles</li>
+                        <li>Art History</li>
+                        <li>Artist Life</li>
+                    </ul>
+                </li>
+                <li class="menu-item" (click)="showMenu($event)">Create
+                    <!-- <ul [ngClass]="{'show': isMenuExpanded}">
+                        <li>How to Start</li>
+                        <li>Techniques & Skills</li>
+                        <li>Art Demos</li>
+                        <li>Free Art Books</li>
+                    </ul> -->
+                </li>
+                <li class="menu-item">Explore</li>
+                <li class="menu-item">Watch & Learn</li>
+                <li class="menu-item">Art Events & Competitions</li>
+                <li class="menu-item">Shop</li>
+                <li class="menu-item search"><span class="glyphicon glyphicon-search"></span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
